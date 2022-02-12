@@ -1,3 +1,5 @@
+package assignment
+
 // INSTRUCTIONS:
 // 1. Read a list of student responses from text file
 // 2. Filter students who are not covid positive
