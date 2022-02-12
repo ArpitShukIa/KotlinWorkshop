@@ -1,0 +1,26 @@
+S.No.      Name       Roll No.     Branch       Covid Positive
+  1       Oliver      2138129       ECE              yes
+  2       William     4662376       MIN              no
+  3       Sophia      1263612       CSE              no
+  4       Lucy        3248462       CSE              no
+  5       James       8429918       CHE              yes
+  6       Emily       4736471       CIV              no
+  7       Chloe       4283661       CHE              no
+  8       Jacob       3246617       CSE              no
+  9       Daniel      8783261       MIN              no
+  10      Hazel       2361718       ECE              no
+  11      Lily        3462691       CSE              yes
+  12      Jack        5672351       CHE              no
+  13      Nora        4123894       PHE              no
+  14      Owen        4898291       PHE              no
+  15      Harry       1278934       ECE              no
+  16      Eliana      9090341       MAT              no
+  17      Peter       3234291       CHE              yes
+  18      Charles     3491897       CSE              yes
+  19      Ryan        9071271       PHE              no
+  20      Daisy       7364891       MIN              no
+  21      Angel       1317382       EEE              no
+  22      Jasper      2366236       EEE              no
+  23      Sarah       1334921       MAT              no
+  24      Clara       4328992       MAT              no
+  25      Kevin       4271786       MEC              no
