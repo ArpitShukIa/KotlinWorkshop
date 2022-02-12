@@ -1,13 +1,9 @@
-data class Person(
-    val name: String,
-    val age: Int,
-    val married: Boolean = true
-)
+data class Person(val firstName: String, val lastName: String = "")
 
 fun main() {
-    val person1 = Person(name = "John", age = 24, married = false)
-    val person2 = Person("Mary", 30)
+    val person1 = Person(firstName = "Jordan", lastName = "Peterson")
+    val person2 = Person("Mary")
     println(person1)
     println(person2)
-    println(person1.name)
+    println(person1.firstName)
 }
