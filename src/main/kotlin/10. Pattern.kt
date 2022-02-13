@@ -4,8 +4,8 @@
 //  *******
 fun main() {
     val n = 5
-    repeat(n) {
-        println(" " * (n - it) + "*" * (2 * it + 1))
+    for (i in 1..n) {
+        println(" " * (n - i) + "*" * (2 * i - 1))
     }
 }
 
