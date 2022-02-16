@@ -20,9 +20,7 @@ data class Response(
 fun main() {
     val responses = readResponses()
     val processedData = processResponses(responses)
-    //writeToFile(processedData)
-    //readResponses()
-    println(processedData)
+    writeToFile(processedData)
 }
 
 
@@ -64,13 +62,28 @@ fun processResponses(responses: List<Response>): List<List<Response>> {
         }
     }
     val studentlist = students.sortedWith(compareBy({ it.branch }, {it.name}))
-    TODO()
+    val callstudents = studentlist.chunked(3)
+    return callstudents
 }
 
 
-/*
+
 fun writeToFile(batches: List<List<Response>>) {
-    TODO()
-}
+    val writer = File("src\\main\\kotlin\\assignment\\batches.txt").bufferedWriter()
+    writer.write("S No.    Name      Roll Number       Branch     Covid Positive")
+    writer.newLine()
+    for (i in batches){
+        val n = batches.indexOf(i)+1
+        writer.write("Batch $n")
+        writer.newLine()
+        for (j in i){
+            val sno = i.indexOf(j) +1
+            writer.write("$sno     ${j.name} ${j.rollNumber} ${j.branch} ${j.covidPositive}")
+            writer.newLine()
+        }
+        writer.newLine()
+    }
+    writer.flush()
+    }
 
- */
+
