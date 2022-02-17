@@ -1,25 +1,35 @@
-Batch 1:
-1.	Chloe		4283661		CHE
-2.	Jack		5672351		CHE
-3.	Emily		4736471		CIV
-4.	Jacob		3246617		CSE
-5.	Lucy		3248462		CSE
-6.	Sophia		1263612		CSE
+S No.    Name      Roll Number       Branch     Covid Positive
+Batch 1
+1     Chloe 4283661 CHE false
+2     Jack 5672351 CHE false
+3     Emily 4736471 CIV false
 
-Batch 2:
-1.	Harry		1278934		ECE
-2.	Hazel		2361718		ECE
-3.	Angel		1317382		EEE
-4.	Jasper		2366236		EEE
-5.	Clara		4328992		MAT
-6.	Eliana		9090341		MAT
-7.	Sarah		1334921		MAT
+Batch 2
+1     Jacob 3246617 CSE false
+2     Lucy 3248462 CSE false
+3     Sophia 1263612 CSE false
 
-Batch 3:
-1.	Kevin		4271786		MEC
-2.	Daisy		7364891		MIN
-3.	Daniel		8783261		MIN
-4.	William		4662376		MIN
-5.	Nora		4123894		PHE
-6.	Owen		4898291		PHE
-7.	Ryan		9071271		PHE
+Batch 3
+1     Harry 1278934 ECE false
+2     Hazel 2361718 ECE false
+3     Angel 1317382 EEE false
+
+Batch 4
+1     Jasper 2366236 EEE false
+2     Clara 4328992 MAT false
+3     Eliana 9090341 MAT false
+
+Batch 5
+1     Sarah 1334921 MAT false
+2     Kevin 4271786 MEC false
+3     Daisy 7364891 MIN false
+
+Batch 6
+1     Daniel 8783261 MIN false
+2     William 4662376 MIN false
+3     Nora 4123894 PHE false
+
+Batch 7
+1     Owen 4898291 PHE false
+2     Ryan 9071271 PHE false
+
