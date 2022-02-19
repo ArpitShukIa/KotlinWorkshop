@@ -1,25 +1,28 @@
+S.No.     Name 		 Roll No. 		 Branch
+
 Batch 1:
-1.	Chloe		4283661		CHE
-2.	Jack		5672351		CHE
-3.	Emily		4736471		CIV
-4.	Jacob		3246617		CSE
-5.	Lucy		3248462		CSE
-6.	Sophia		1263612		CSE
+1. 		 Chloe 		 4283661 		 CHE
+2. 		 Jack 		 5672351 		 CHE
+3. 		 Emily 		 4736471 		 CIV
+4. 		 Jacob 		 3246617 		 CSE
+5. 		 Lucy 		 3248462 		 CSE
+6. 		 Sophia 	 1263612 		 CSE
 
 Batch 2:
-1.	Harry		1278934		ECE
-2.	Hazel		2361718		ECE
-3.	Angel		1317382		EEE
-4.	Jasper		2366236		EEE
-5.	Clara		4328992		MAT
-6.	Eliana		9090341		MAT
-7.	Sarah		1334921		MAT
+1. 		 Harry 		 1278934 		 ECE
+2. 		 Hazel 		 2361718 		 ECE
+3. 		 Angel 		 1317382 		 EEE
+4. 		 Jasper      2366236 		 EEE
+5. 		 Clara 		 4328992 		 MAT
+6. 		 Eliana 	 9090341 		 MAT
+7. 		 Sarah 		 1334921 		 MAT
 
 Batch 3:
-1.	Kevin		4271786		MEC
-2.	Daisy		7364891		MIN
-3.	Daniel		8783261		MIN
-4.	William		4662376		MIN
-5.	Nora		4123894		PHE
-6.	Owen		4898291		PHE
-7.	Ryan		9071271		PHE
+1. 		 Kevin 		 4271786 		 MEC
+2. 		 Daisy 		 7364891 		 MIN
+3. 		 Daniel 	 8783261 		 MIN
+4. 		 William 	 4662376 		 MIN
+5. 		 Nora 		 4123894 		 PHE
+6. 		 Owen 		 4898291 		 PHE
+7. 		 Ryan 		 9071271 		 PHE
+
