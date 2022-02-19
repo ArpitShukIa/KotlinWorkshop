@@ -24,26 +24,16 @@ fun main() {
 }
 
 fun readResponses(): List<Response> {
-    val returnList = mutableListOf<Response>()
-    val fileContent = File("responses.txt")
-    val sc = Scanner(fileContent)
+    var returnList = mutableListOf<Response>()
+    val sc = Scanner(File("responses.txt"))
     sc.nextLine()
-
-    var name: String
-    var rollNumber: Int
-    var branch: String
-    var covidPositive: String
 
     while (sc.hasNextLine()) {
         sc.next()
-        name = sc.next()
-        rollNumber = sc.nextInt()
-        branch = sc.next()
-        covidPositive = sc.next()
-        if (covidPositive == "no")
-            returnList.add(Response(name, rollNumber, branch, false));
+        returnList.add(Response(sc.next(), sc.nextInt(), sc.next(), sc.next() == "yes"));
     }
     sc.close()
+    returnList = returnList.filterNot { it.covidPositive }.toMutableList()
     returnList.sortWith(compareBy<Response> {it.branch}.thenBy {it.name})
     return returnList.toList()
 }
