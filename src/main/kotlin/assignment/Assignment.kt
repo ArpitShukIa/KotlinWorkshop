@@ -1,7 +1,7 @@
+package assignment
+
 import java.util.Scanner
 import java.io.File
-
-package assignment
 
 // INSTRUCTIONS:
 // 1. Read a list of student responses from text file
