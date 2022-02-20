@@ -1,5 +1,7 @@
 package assignment
 
+import java.io.File
+
 // INSTRUCTIONS:
 // 1. Read a list of student responses from text file
 // 2. Filter students who are not covid positive
@@ -21,13 +23,35 @@ fun main() {
 }
 
 fun readResponses(): List<Response> {
-    TODO()
+    val responseFile: List<String> = File("responses.txt").readLines()
+    val responses = mutableListOf<Response>()
+
+    for (rw in responseFile){
+       val inputs = rw.split(" ").filter{it != ""}
+       val student = Response(inputs[2],inputs[3].toInt(),inputs[4],inputs[5]=="yes")
+        responses.add(student)
+    }
+    return responses.toList()
 }
 
 fun processResponses(responses: List<Response>): List<List<Response>> {
-    TODO()
+    val covidNeg = responses.filter{ !it.covidPositive }
+    val sortByBranchAndName = covidNeg.sortedWith(compareBy({it.branch},{it.name}))
+    val groupByBranch = sortByBranchAndName.groupBy { it.branch }
+    return groupByBranch.values.chunked(3).map{ it.flatten() }
 }
 
 fun writeToFile(batches: List<List<Response>>) {
-    TODO()
+    val batchesFile = File("batches.txt")
+    batches.forEach{  listOfResponse ->
+        batchesFile.appendText("Batch ${batches.indexOf(listOfResponse)+1}: \n")
+        listOfResponse.forEach{
+            batchesFile.appendText("${listOfResponse.indexOf(it) + 1}. \t\t ${it.name} \t\t ${it.rollNumber} \t\t ${it.branch}\n") }
+        }
+        batchesFile.appendText("\n")
+
 }
+
+
+
+
