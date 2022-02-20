@@ -38,15 +38,17 @@ fun processResponses(responses: List<Response>): List<List<Response>> {
     val covidNeg = responses.filter{ !it.covidPositive }
     val sortByBranchAndName = covidNeg.sortedWith(compareBy({it.branch},{it.name}))
     val groupByBranch = sortByBranchAndName.groupBy { it.branch }
-    return groupByBranch.values.chunked(3).map{ it.flatten() }
+    return groupByBranch.chunked(3).map{ it.flatten() }
 }
 
 fun writeToFile(batches: List<List<Response>>) {
     val batchesFile = File("batches.txt")
+    batchesFile.appendText("S No.    Name      Roll Number       Branch     Covid Positive")
     batches.forEach{  listOfResponse ->
+
         batchesFile.appendText("Batch ${batches.indexOf(listOfResponse)+1}: \n")
         listOfResponse.forEach{
-            batchesFile.appendText("${listOfResponse.indexOf(it) + 1}.\t ${it.name} \t\t ${it.rollNumber} \t\t ${it.branch}\n") }
+            batchesFile.appendText("${listOfResponse.indexOf(it) + 1}. \t ${it.name} \t\t ${it.rollNumber} \t\t ${it.branch}\n") }
         }
         batchesFile.appendText("\n")
 
