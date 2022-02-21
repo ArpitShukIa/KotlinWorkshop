@@ -42,15 +42,7 @@ fun processResponses(responses: List<Response>): List<List<Response>> {
 }
 
 fun writeToFile(batches: List<List<Response>>) {
-//     File("batches.txt").printWriter().use { out ->
-//         for ((batchIndex, batch) in batches.withIndex()){
-//             out.println("Batch ${batchIndex+1}:")
-//             for((studentIndex, student) in batch.withIndex()){
-//                 out.println("${studentIndex+1}.\t${student.name}\t\t${student.rollNumber}\t\t${student.branch}")
-//             }
-//             out.println()
-//         }
-//     }
+
 
     val batchesFile = File("batches.txt")
     //batchesFile.appendText("S No.    Name      Roll Number       Branch     Covid Positive")
@@ -60,7 +52,7 @@ fun writeToFile(batches: List<List<Response>>) {
         listOfResponse.forEach{
             batchesFile.appendText("${listOfResponse.indexOf(it) + 1}.\t ${it.name}\t\t${it.rollNumber}\t\t${it.branch}\n") }
         }
-        batchesFile.appendText("\n")
+      //  batchesFile.appendText("\n")
 
 }
 
