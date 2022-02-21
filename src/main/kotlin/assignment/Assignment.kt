@@ -50,7 +50,7 @@ fun writeToFile(batches: List<List<Response>>) {
 
         batchesFile.appendText("Batch ${batches.indexOf(listOfResponse)+1}: \n")
         listOfResponse.forEach{
-            batchesFile.appendText("${listOfResponse.indexOf(it) + 1}.\t ${it.name}\t\t${it.rollNumber}\t\t${it.branch}\n") }
+            batchesFile.appendText("${listOfResponse.indexOf(it) + 1}.\t${it.name}\t\t${it.rollNumber}\t\t${it.branch}\n") }
         }
         batchesFile.appendText("\n")
 
