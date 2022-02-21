@@ -1,25 +1,26 @@
 Batch 1:
-1.	Chloe		4283661		CHE
-2.	Jack		5672351		CHE
-3.	Emily		4736471		CIV
-4.	Jacob		3246617		CSE
-5.	Lucy		3248462		CSE
-6.	Sophia		1263612		CSE
+1			Chloe			CHE			4283661
+2			Jack			CHE			5672351
+3			Emily			CIV			4736471
+4			Jacob			CSE			3246617
+5			Lucy			CSE			3248462
+6			Sophia			CSE			1263612
 
 Batch 2:
-1.	Harry		1278934		ECE
-2.	Hazel		2361718		ECE
-3.	Angel		1317382		EEE
-4.	Jasper		2366236		EEE
-5.	Clara		4328992		MAT
-6.	Eliana		9090341		MAT
-7.	Sarah		1334921		MAT
+1			Harry			ECE			1278934
+2			Hazel			ECE			2361718
+3			Angel			EEE			1317382
+4			Jasper			EEE			2366236
+5			Clara			MAT			4328992
+6			Eliana			MAT			9090341
+7			Sarah			MAT			1334921
 
 Batch 3:
-1.	Kevin		4271786		MEC
-2.	Daisy		7364891		MIN
-3.	Daniel		8783261		MIN
-4.	William		4662376		MIN
-5.	Nora		4123894		PHE
-6.	Owen		4898291		PHE
-7.	Ryan		9071271		PHE
+1			Kevin			MEC			4271786
+2			Daisy			MIN			7364891
+3			Daniel			MIN			8783261
+4			William			MIN			4662376
+5			Nora			PHE			4123894
+6			Owen			PHE			4898291
+7			Ryan			PHE			9071271
+
