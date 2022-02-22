@@ -1,0 +1,4 @@
+Batch 
+Response(name=Nora, rollNumber=4123894, branch=PHE, covidPositive=false)
+Response(name=Owen, rollNumber=4898291, branch=PHE, covidPositive=false)
+Response(name=Ryan, rollNumber=9071271, branch=PHE, covidPositive=false)
