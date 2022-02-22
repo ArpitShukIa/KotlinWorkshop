@@ -23,11 +23,28 @@ fun main() {
 fun readResponses(): List<Response> {
     TODO()
 }
+val file = "src/main/kotlin/assignment/responses.txt"
+val data:List<String> = File(file).readlines()
 
+val responses:MutableList<Response> = mutablelistOf()
+
+for (response in data.drop(1)){
+        val dataparts = response.split("").filter{ it!="" }
+        val student   = Response(dataparts[1],dataparts[2].toInt(),dataparts[3],dataparts[4]=="yes")responses.add(student)
+}
+
+return responses
 fun processResponses(responses: List<Response>): List<List<Response>> {
     TODO()
+    return responses.filter{!it.covidpositive}.sortedWith(compareBy({it.branch},{it.name})).groupBy{it.branch}.values.chunked(3).map{it.flatten()}
 }
 
 fun writeToFile(batches: List<List<Response>>) {
     TODO()
-}
+    val file = File("src/main/kotlin/assignment/batches.txt")
+    file.appendText("S.No \t\t NAME \t\t ROLL NO. \t\t BRANCH \n\n")
+    batches.forEachIndexed { index, batch -> file.appendText("Batch ${index + 1}:\n"
+    batch.forEachIndexed{stud_index, student -> file.appendText("${stud_index + 1}. \t\t ${student.name} \t\t ${student.rollNumber} \t\t ${student.branch}\n")}
+        file.appendText("\n")
+    }
+    }
