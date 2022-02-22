@@ -1,0 +1,31 @@
+Batch 1:
+1.		Chloe		4283661		 CHE
+2.		Jack		5672351		 CHE
+3.		James		8429918		 CHE
+4.		Peter		3234291		 CHE
+5.		Emily		4736471		 CIV
+6.		Charles		3491897		 CSE
+7.		Jacob		3246617		 CSE
+8.		Lily		3462691		 CSE
+9.		Lucy		3248462		 CSE
+10.		Sophia		1263612		 CSE
+
+Batch 2:
+1.		Harry		1278934		 ECE
+2.		Hazel		2361718		 ECE
+3.		Oliver		2138129		 ECE
+4.		Angel		1317382		 EEE
+5.		Jasper		2366236		 EEE
+6.		Clara		4328992		 MAT
+7.		Eliana		9090341		 MAT
+8.		Sarah		1334921		 MAT
+
+Batch 3:
+1.		Kevin		4271786		 MEC
+2.		Daisy		7364891		 MIN
+3.		Daniel		8783261		 MIN
+4.		William		4662376		 MIN
+5.		Nora		4123894		 PHE
+6.		Owen		4898291		 PHE
+7.		Ryan		9071271		 PHE
+
