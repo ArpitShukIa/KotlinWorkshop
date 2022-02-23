@@ -1,5 +1,6 @@
 package assignment
 
+import java.io.File
 // INSTRUCTIONS:
 // 1. Read a list of student responses from text file
 // 2. Filter students who are not covid positive
@@ -21,13 +22,36 @@ fun main() {
 }
 
 fun readResponses(): List<Response> {
-    TODO()
+
+    val file = "src/main/kotlin/assignment/responses.txt"
+    val data: List<String> = File(file).readLines()
+
+    val responses:MutableList<Response> = mutableListOf()
+
+    for (response in data.drop(1)){
+        val dataItems = response.split(" ").filter { it!="" }
+        val student = Response(dataItems[1], dataItems[2].toInt(), dataItems[3], dataItems[4]=="yes")
+        responses.add(student)
+    }
+
+    return responses
 }
 
 fun processResponses(responses: List<Response>): List<List<Response>> {
-    TODO()
+
+    return responses.groupBy {it.branch}.values.toList().withIndex().groupBy { it.index / 3 }.map { it.value.flatMap { it.value } }
+
 }
 
 fun writeToFile(batches: List<List<Response>>) {
-    TODO()
+
+    File("batches.txt").printWriter().use { out ->
+
+        for ((index, batch) in batches.withIndex()) {
+            out.println("Batch ${index+1}:")
+            for ((studentIndex, student) in batch.withIndex())
+                out.println("${studentIndex+1}.\t${student.name}\t\t${student.rollNumber}\t\t${student.branch}")
+            out.println()
+        }
+    }
 }
